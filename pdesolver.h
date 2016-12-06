@@ -23,7 +23,7 @@ float carry(float x, struct parameters par)
 	return par.K*exp(-par.k*pow(fabs(x),par.nk));
 }
 
-float trapComp(float n, int i, float *pop, float *binPt, struct parameters par)	//trapezoid method with n integrals at p(i); p denotes population size vector
+float trapComp(float n, int i, float *pop, float *binPt, struct parameters par)	//trapezoid method with n intervals at p(i); p denotes population size vector
 {
 	int j;
 	float x=0;
